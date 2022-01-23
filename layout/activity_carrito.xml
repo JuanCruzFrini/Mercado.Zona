@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarritoActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="8dp"
+        android:background="#2AFF2E">
+
+        <ImageButton
+            android:id="@+id/perfilbtn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_person_24"
+            android:background="@drawable/buttons"
+            android:backgroundTint="@color/design_default_color_primary" />
+
+        <SearchView
+            android:queryHint="Buscar"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="6"
+            android:layout_marginHorizontal="8dp"
+            android:backgroundTint="#1A6200EE"
+            android:background="@drawable/buttons"
+            android:defaultFocusHighlightEnabled="true" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Carrito:"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/design_default_color_primary"
+        android:gravity="center"
+        android:textSize="32dp"
+        android:paddingTop="8dp"
+        android:paddingHorizontal="24dp"
+        android:paddingBottom="24dp"
+        android:background="@drawable/degradado_verde"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/agregarCarritobtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Agregar"
+            android:layout_margin="8dp"
+            android:background="@drawable/buttons"
+            android:textColor="#1AFF00"/>
+
+        <Button
+            android:id="@+id/eliminarCarritobtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Eliminar"
+            android:layout_margin="8dp"
+            android:background="@drawable/buttons"
+            android:textColor="#1AFF00"/>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/guardarCambiosbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="guardar cambios"
+            android:layout_margin="8dp"
+            android:background="@drawable/buttons"
+            android:textColor="#1AFF00"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/comprarcarritobtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="8dp"
+        android:background="@drawable/buttons"
+        android:gravity="center"
+        android:text="comprar carrito"
+        android:textColor="#1AFF00" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="16dp"
+        android:background="@color/design_default_color_primary"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/Art1_cont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp"
+            android:background="#1A000000">
+
+            <ImageView
+                android:id="@+id/imagen_Art1"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="150dp"
+                android:src="@mipmap/ic_launcher_round" />
+
+            <LinearLayout
+                android:id="@+id/container_info1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/ArtDescripcion1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Descripcion"
+                        android:fontFamily="sans-serif"/>
+
+                    <Button
+                        android:id="@+id/botonX_carrito1"
+                        android:visibility="gone"
+                        android:textSize="24dp"
+                        android:fontFamily="sans-serif-black"
+                        android:background="@color/black"
+                        android:layout_marginHorizontal="40dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:text="X"
+                        android:textColor="#FF0000"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$"
+                        android:fontFamily="monospace"
+                        android:textColor="#1AFF00"
+                        android:textSize="25dp"/>
+
+                    <TextView
+                        android:id="@+id/ArtPrecio1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9999.00"
+                        android:fontFamily="monospace"
+                        android:textColor="#1AFF00"
+                        android:textSize="25dp"/>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/ArtEnvio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$200"
+                    android:textColor="#FF1AFF00"
+                    android:fontFamily="sans-serif"
+                    android:textSize="10dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/Art2_cont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp">
+
+            <ImageView
+                android:id="@+id/imagen_Art2"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="150dp"
+                android:src="@mipmap/ic_launcher_round" />
+
+            <LinearLayout
+                android:id="@+id/container_info2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/ArtDescripcion2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Descripcion"
+                        android:fontFamily="sans-serif"/>
+
+                    <Button
+                        android:id="@+id/botonX_carrito2"
+                        android:visibility="gone"
+                        android:textSize="24dp"
+                        android:fontFamily="sans-serif-black"
+                        android:background="@color/black"
+                        android:layout_marginHorizontal="40dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:text="X"
+                        android:textColor="#FF0000"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/ArtPrecio2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$9999.00"
+                    android:fontFamily="monospace"
+                    android:textColor="#1AFF00"
+                    android:textSize="25dp"/>
+
+                <TextView
+                    android:id="@+id/ArtEnvio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¡Envio gratis!"
+                    android:textColor="#1AFF00"
+                    android:fontFamily="sans-serif"
+                    android:textSize="10dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/Art3_cont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp"
+            android:background="#1A000000">
+
+            <ImageView
+                android:id="@+id/imagen_Art3"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="150dp"
+                android:src="@mipmap/ic_launcher_round" />
+
+            <LinearLayout
+                android:id="@+id/container_info3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/ArtDescripcion3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Descripcion"
+                        android:fontFamily="sans-serif"/>
+
+                    <Button
+                        android:id="@+id/botonX_carrito3"
+                        android:visibility="gone"
+                        android:textSize="24dp"
+                        android:fontFamily="sans-serif-black"
+                        android:background="@color/black"
+                        android:layout_marginHorizontal="40dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:text="X"
+                        android:textColor="#FF0000"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ArtPrecio3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$9999.00"
+                    android:fontFamily="monospace"
+                    android:textColor="#1AFF00"
+                    android:textSize="25dp"/>
+
+                <TextView
+                    android:id="@+id/ArtEnvio3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$200"
+                    android:textColor="#FF1AFF00"
+                    android:fontFamily="sans-serif"
+                    android:textSize="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/Art4_cont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp">
+
+            <ImageView
+                android:id="@+id/imagen_Art4"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="150dp"
+                android:src="@mipmap/ic_launcher_round" />
+
+            <LinearLayout
+                android:id="@+id/container_info4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/ArtDescripcion4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Descripcion"
+                        android:fontFamily="sans-serif"/>
+
+                    <Button
+                        android:id="@+id/botonX_carrito4"
+                        android:visibility="gone"
+                        android:textSize="24dp"
+                        android:fontFamily="sans-serif-black"
+                        android:background="@color/black"
+                        android:layout_marginHorizontal="40dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:text="X"
+                        android:textColor="#FF0000"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ArtPrecio4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$9999.00"
+                    android:fontFamily="monospace"
+                    android:textColor="#1AFF00"
+                    android:textSize="25dp"/>
+
+                <TextView
+                    android:id="@+id/ArtEnvio4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¡Envio gratis!"
+                    android:textColor="#1AFF00"
+                    android:fontFamily="sans-serif"
+                    android:textSize="10dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/Art5_cont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp"
+            android:background="#1A000000">
+
+            <ImageView
+                android:id="@+id/imagen_Art5"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="150dp"
+                android:src="@mipmap/ic_launcher_round" />
+
+            <LinearLayout
+                android:id="@+id/container_info5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/ArtDescripcion5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Descripcion"
+                        android:fontFamily="sans-serif"/>
+
+
+                    <Button
+                        android:id="@+id/botonX_carrito5"
+                        android:visibility="gone"
+                        android:textSize="24dp"
+                        android:fontFamily="sans-serif-black"
+                        android:background="@color/black"
+                        android:layout_marginHorizontal="40dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:text="X"
+                        android:textColor="#FF0000"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ArtPrecio5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$9999.00"
+                    android:fontFamily="monospace"
+                    android:textColor="#1AFF00"
+                    android:textSize="25dp"/>
+
+                <TextView
+                    android:id="@+id/ArtEnvio5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$200"
+                    android:textColor="#FF1AFF00"
+                    android:fontFamily="sans-serif"
+                    android:textSize="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

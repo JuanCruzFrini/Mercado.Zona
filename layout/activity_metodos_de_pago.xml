@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MetodosDePagoActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Metodos de pago:"
+        android:textSize="32dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/design_default_color_primary"
+        android:padding="24dp"
+        android:gravity="center"
+        android:background="@drawable/degradado_verde"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:visibility="gone"
+                android:id="@+id/rbmpClicked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@android:drawable/checkbox_on_background"
+                android:text="Mercado Pago"
+                android:layout_gravity="center"
+                android:textSize="24dp"
+                android:textColor="@color/design_default_color_primary"/>
+
+            <RadioButton
+                android:id="@+id/rbmp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:button="@android:drawable/checkbox_off_background"
+                android:text="Mercado Pago"
+                android:textSize="24dp" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:visibility="gone"
+                android:id="@+id/rbrpClicked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@android:drawable/checkbox_on_background"
+                android:textColor="@color/design_default_color_primary"
+                android:text="Rapipago / Pago facil"
+                android:textSize="24dp"
+                android:layout_gravity="center"/>
+
+            <RadioButton
+                android:id="@+id/rbrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:button="@android:drawable/checkbox_off_background"
+                android:text="Rapipago / Pago facil"
+                android:textSize="24dp" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="24dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:visibility="gone"
+                android:id="@+id/rbtarjClicked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@android:drawable/checkbox_on_background"
+                android:text="Tarjeta de debito / Credito"
+                android:textSize="24dp"
+                android:textColor="@color/design_default_color_primary"
+                android:layout_gravity="center"/>
+
+            <RadioButton
+                android:id="@+id/rbtarj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:button="@android:drawable/checkbox_off_background"
+                android:text="Tarjeta de debito / Credito"
+                android:textSize="24dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/numTarjeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Numero de tarjeta"
+            android:inputType="number"
+            android:gravity="center"/>
+
+    </RadioGroup>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/cancelarbtn"
+            android:layout_marginRight="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:textSize="32dp"
+            android:textColor="#2AFF2E"
+            android:background="@drawable/buttons"/>
+
+        <Button
+            android:id="@+id/continuarbtn"
+            android:layout_marginLeft="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✓"
+            android:textSize="32dp"
+            android:textColor="#2AFF2E"
+            android:background="@drawable/buttons"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/urlprod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="url"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/descripcion_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripcion"
+        android:fontFamily="sans-serif"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/precioEnvio_prod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Gratis"
+        android:textColor="#1AFF00" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/precio_comprar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textColor="#2AFF2E"
+        android:text="$"
+        android:textSize="32dp"
+        android:gravity="center"/>
+
+</LinearLayout>
+

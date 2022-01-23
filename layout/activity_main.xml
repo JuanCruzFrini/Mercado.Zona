@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="8dp"
+        android:background="@color/mi_secundario">
+
+        <ImageButton
+            android:id="@+id/perfilbtn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_person_24"
+            android:background="@drawable/buttons"
+            android:backgroundTint="@color/design_default_color_primary" />
+
+        <EditText
+            android:id="@+id/buscador"
+            android:queryHint="Buscar"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="5"
+            android:layout_marginHorizontal="8dp"
+            android:defaultFocusHighlightEnabled="true"
+            android:backgroundTint="#1A6200EE"
+            android:background="@drawable/buttons"/>
+
+        <ImageButton
+            android:visibility="gone"
+            android:id="@+id/lupa"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/buttons"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:src="@drawable/buscar"/>
+
+
+        <ImageButton
+            android:id="@+id/carritoNav"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttons"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:src="@drawable/carrito"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/sombra"/>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/consulta"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="40dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="8dp">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="8dp"
+            android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/celubtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/buttons"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:src="@drawable/ic_baseline_smartphone_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:text="Smartphones"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/design_default_color_primary"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="8dp"
+            android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/superbtn"
+            android:src="@drawable/superr"
+            android:layout_gravity="center"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+            android:background="@drawable/buttons"
+            android:backgroundTint="@color/design_default_color_primary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:text="Supermercado"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/design_default_color_primary"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="8dp"
+            android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/ofertasbtn"
+            android:src="@drawable/ofertas"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/buttons"
+            android:backgroundTint="@color/design_default_color_primary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:text="Ofertas"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/design_default_color_primary"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="8dp"
+            android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/categoriasbtn"
+            android:src="@drawable/categoriasmas"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/buttons"
+            android:backgroundTint="@color/design_default_color_primary"  />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:text="+ Categorias"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/design_default_color_primary"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/design_default_color_primary"
+        android:layout_marginHorizontal="24dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ofertastxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Ofertas"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="24dp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_main_ofertas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/recyclers_main_background"
+                android:padding="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/design_default_color_primary" />
+
+            <TextView
+                android:id="@+id/smartphonestxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Smartphones"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="24dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_main_smartphones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/recyclers_main_background"
+                android:orientation="horizontal"
+                android:padding="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/design_default_color_primary" />
+
+            <TextView
+                android:id="@+id/tiendastxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Tiendas"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="24dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_main_tiendas"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/recyclers_main_background"
+                android:backgroundTint="@color/design_default_color_primary"
+                android:orientation="horizontal"
+                android:padding="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/design_default_color_primary" />
+
+            <TextView
+                android:id="@+id/supertxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Supermercado"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="24dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_main_super"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/recyclers_main_background"
+                android:orientation="horizontal"
+                android:padding="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/design_default_color_primary" />
+
+
+            <TextView
+                android:id="@+id/modatxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Moda"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="24dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_main_ropa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/recyclers_main_background"
+
+                android:orientation="horizontal"
+                android:padding="16dp" />
+
+        </LinearLayout>
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+         <LinearLayout
+             android:id="@+id/container_articulo"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:paddingVertical="8dp"
+             android:background="#1A000000">
+
+             <ImageView
+                 android:id="@+id/imagen_info"
+                 android:layout_width="0dp"
+                 android:layout_weight="2"
+                 android:layout_height="150dp"
+                 android:src="@mipmap/ic_launcher_round" />
+
+             <LinearLayout
+                 android:id="@+id/container_info"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="2"
+                 android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Articulo"
+                    android:textSize="30dp"
+                    android:fontFamily="sans-serif-black"/>
+
+                <TextView
+                    android:id="@+id/descripcion_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripcion"
+                    android:fontFamily="sans-serif"/>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="monospace"
+                         android:text="$"
+                         android:textColor="#1AFF00"
+                         android:textSize="25dp" />
+
+                     <TextView
+                         android:id="@+id/precio_info"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="monospace"
+                         android:text="9999.00"
+                         android:textColor="#1AFF00"
+                         android:textSize="25dp" />
+
+                 </LinearLayout>
+
+                 <TextView
+                     android:id="@+id/envio_mainActivity"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="$200"
+                     android:textColor="#FF1AFF00"
+                     android:fontFamily="sans-serif"
+                     android:textSize="10dp"/>
+
+                 <ImageButton
+                     android:tag="favorito"
+                     android:id="@+id/favorito"
+                     android:layout_width="wrap_content"
+                     android:layout_height="35dp"
+                     android:background="#00000000"
+                     android:src="@drawable/cora_vacio" />
+
+                 <ImageButton
+                     android:tag="favoritoOC"
+                     android:id="@+id/favoritoOC"
+                     android:visibility="gone"
+                     android:layout_width="wrap_content"
+                     android:layout_height="35dp"
+                     android:background="#00000000"
+                     android:src="@drawable/corazon" />
+
+             </LinearLayout>
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:paddingVertical="8dp"
+             >
+
+             <ImageView
+                 android:layout_width="0dp"
+                 android:layout_weight="2"
+                 android:layout_height="150dp"
+                 android:src="@mipmap/ic_launcher_round" />
+
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="2"
+                 android:orientation="vertical">
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Articulo"
+                     android:textSize="30dp"
+                     android:fontFamily="sans-serif-black"/>
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Descripcion"
+                     android:fontFamily="sans-serif"/>
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="$9999.00"
+                     android:fontFamily="monospace"
+                     android:textColor="#1AFF00"
+                     android:textSize="25dp"/>
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="¡Envio gratis!"
+                     android:textColor="#1AFF00"
+                     android:fontFamily="sans-serif"
+                     android:textSize="10dp"/>
+
+
+             </LinearLayout>
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:paddingVertical="8dp"
+             android:background="#1A000000">
+
+             <ImageView
+                 android:layout_width="0dp"
+                 android:layout_weight="2"
+                 android:layout_height="150dp"
+                 android:src="@mipmap/ic_launcher_round" />
+
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="2"
+                 android:orientation="vertical">
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Articulo"
+                     android:textSize="30dp"
+                     android:fontFamily="sans-serif-black"/>
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Descripcion"
+                     android:fontFamily="sans-serif"/>
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="$9999.00"
+                     android:fontFamily="monospace"
+                     android:textColor="#1AFF00"
+                     android:textSize="25dp"/>
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="¡Envio gratis!"
+                     android:textColor="#1AFF00"
+                     android:fontFamily="sans-serif"
+                     android:textSize="10dp"/>
+
+             </LinearLayout>
+
+         </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:paddingVertical="8dp">
+
+                 <ImageView
+                     android:layout_width="0dp"
+                     android:layout_weight="2"
+                     android:layout_height="150dp"
+                     android:src="@mipmap/ic_launcher_round" />
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="2"
+                     android:orientation="vertical">
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Articulo"
+                         android:textSize="30dp"
+                         android:fontFamily="sans-serif-black"/>
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Descripcion"
+                         android:fontFamily="sans-serif"/>
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="$9999.00"
+                         android:fontFamily="monospace"
+                         android:textColor="#1AFF00"
+                         android:textSize="25dp"/>
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="¡Envio gratis!"
+                         android:textColor="#1AFF00"
+                         android:fontFamily="sans-serif"
+                         android:textSize="10dp"/>
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal"
+                     android:paddingVertical="8dp">
+
+                     <ImageView
+                         android:layout_width="0dp"
+                         android:layout_weight="2"
+                         android:layout_height="150dp"
+                         android:src="@mipmap/ic_launcher_round" />
+
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="2"
+                         android:orientation="vertical">
+
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:text="Articulo"
+                             android:textSize="30dp"
+                             android:fontFamily="sans-serif-black"/>
+
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:text="Descripcion"
+                             android:fontFamily="sans-serif"/>
+
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:text="$9999.00"
+                             android:fontFamily="monospace"
+                             android:textColor="#1AFF00"
+                             android:textSize="25dp"/>
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="¡Envio gratis!"
+                             android:textColor="#1AFF00"
+                             android:fontFamily="sans-serif"
+                             android:textSize="10dp"/>
+
+                     </LinearLayout>
+
+
+                 </LinearLayout>
+
+
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:paddingVertical="8dp"
+                 android:background="#1A000000">
+
+                 <ImageView
+                     android:layout_width="0dp"
+                     android:layout_weight="2"
+                     android:layout_height="150dp"
+                     android:src="@mipmap/ic_launcher_round" />
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="2"
+                     android:orientation="vertical">
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Articulo"
+                         android:textSize="30dp"
+                         android:fontFamily="sans-serif-black"/>
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Descripcion"
+                         android:fontFamily="sans-serif"/>
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="$9999.00"
+                         android:fontFamily="monospace"
+                         android:textColor="#1AFF00"
+                         android:textSize="25dp"/>
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="¡Envio gratis!"
+                         android:textColor="#FF1AFF00"
+                         android:fontFamily="sans-serif"
+                         android:textSize="10dp"/>
+
+                 </LinearLayout>
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:paddingVertical="8dp">
+
+                 <ImageView
+                     android:layout_width="0dp"
+                     android:layout_weight="2"
+                     android:layout_height="150dp"
+                     android:src="@mipmap/ic_launcher_round" />
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="2"
+                     android:orientation="vertical">
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Articulo"
+                         android:textSize="30dp"
+                         android:fontFamily="sans-serif-black"/>
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Descripcion"
+                         android:fontFamily="sans-serif"/>
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="$9999.00"
+                         android:fontFamily="monospace"
+                         android:textColor="#1AFF00"
+                         android:textSize="25dp"/>
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="¡Envio gratis!"
+                         android:textColor="#FF1AFF00"
+                         android:fontFamily="sans-serif"
+                         android:textSize="10dp"/>
+
+                 </LinearLayout>
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:paddingVertical="8dp"
+                 android:background="#1A000000">
+
+                 <ImageView
+                     android:layout_width="0dp"
+                     android:layout_weight="2"
+                     android:layout_height="150dp"
+                     android:src="@mipmap/ic_launcher_round" />
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="2"
+                     android:orientation="vertical">
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Articulo"
+                         android:textSize="30dp"
+                         android:fontFamily="sans-serif-black"/>
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Descripcion"
+                         android:fontFamily="sans-serif"/>
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="$9999.00"
+                         android:fontFamily="monospace"
+                         android:textColor="#1AFF00"
+                         android:textSize="25dp"/>
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="¡Envio gratis!"
+                         android:textColor="#FF1AFF00"
+                         android:fontFamily="sans-serif"
+                         android:textSize="10dp"/>
+
+                 </LinearLayout>
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:paddingVertical="8dp">
+
+                 <ImageView
+                     android:layout_width="0dp"
+                     android:layout_weight="2"
+                     android:layout_height="150dp"
+                     android:src="@mipmap/ic_launcher_round" />
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="2"
+                     android:orientation="vertical">
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Articulo"
+                         android:textSize="30dp"
+                         android:fontFamily="sans-serif-black"/>
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Descripcion"
+                         android:fontFamily="sans-serif"/>
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="$9999.00"
+                         android:fontFamily="monospace"
+                         android:textColor="#1AFF00"
+                         android:textSize="25dp"/>
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="¡Envio gratis!"
+                         android:textColor="#FF1AFF00"
+                         android:fontFamily="sans-serif"
+                         android:textSize="10dp"/>
+
+                 </LinearLayout>
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:paddingVertical="8dp"
+                 android:background="#1A000000">
+
+                 <ImageView
+                     android:layout_width="0dp"
+                     android:layout_weight="2"
+                     android:layout_height="150dp"
+                     android:src="@mipmap/ic_launcher_round" />
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="2"
+                     android:orientation="vertical">
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Articulo"
+                         android:textSize="30dp"
+                         android:fontFamily="sans-serif-black"/>
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Descripcion"
+                         android:fontFamily="sans-serif"/>
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="$9999.00"
+                         android:fontFamily="monospace"
+                         android:textColor="#1AFF00"
+                         android:textSize="25dp"/>
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="¡Envio gratis!"
+                         android:textColor="#FF1AFF00"
+                         android:fontFamily="sans-serif"
+                         android:textSize="10dp"/>
+
+                 </LinearLayout>
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:paddingVertical="8dp">
+
+                 <ImageView
+                     android:layout_width="0dp"
+                     android:layout_weight="2"
+                     android:layout_height="150dp"
+                     android:src="@mipmap/ic_launcher_round" />
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="2"
+                     android:orientation="vertical">
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Articulo"
+                         android:textSize="30dp"
+                         android:fontFamily="sans-serif-black"/>
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Descripcion"
+                         android:fontFamily="sans-serif"/>
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="$9999.00"
+                         android:fontFamily="monospace"
+                         android:textColor="#1AFF00"
+                         android:textSize="25dp"/>
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="¡Envio gratis!"
+                         android:textColor="#FF1AFF00"
+                         android:fontFamily="sans-serif"
+                         android:textSize="10dp"/>
+
+                 </LinearLayout>
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:paddingVertical="8dp"
+                 android:background="#1A000000">
+
+                 <ImageView
+                     android:layout_width="0dp"
+                     android:layout_weight="2"
+                     android:layout_height="150dp"
+                     android:src="@mipmap/ic_launcher_round" />
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="2"
+                     android:orientation="vertical">
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Articulo"
+                         android:textSize="30dp"
+                         android:fontFamily="sans-serif-black"/>
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Descripcion"
+                         android:fontFamily="sans-serif"/>
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="$9999.00"
+                         android:fontFamily="monospace"
+                         android:textColor="#1AFF00"
+                         android:textSize="25dp"/>
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="¡Envio gratis!"
+                         android:textColor="#FF1AFF00"
+                         android:fontFamily="sans-serif"
+                         android:textSize="10dp"/>
+
+                 </LinearLayout>
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:paddingVertical="8dp">
+
+                 <ImageView
+                     android:layout_width="0dp"
+                     android:layout_weight="2"
+                     android:layout_height="150dp"
+                     android:src="@mipmap/ic_launcher_round" />
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="2"
+                     android:orientation="vertical">
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Articulo"
+                         android:textSize="30dp"
+                         android:fontFamily="sans-serif-black"/>
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Descripcion"
+                         android:fontFamily="sans-serif"/>
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="$9999.00"
+                         android:fontFamily="monospace"
+                         android:textColor="#1AFF00"
+                         android:textSize="25dp"/>
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="¡Envio gratis!"
+                         android:textColor="#FF1AFF00"
+                         android:fontFamily="sans-serif"
+                         android:textSize="10dp"/>
+
+                 </LinearLayout>
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:paddingVertical="8dp"
+                 android:background="#1A000000">
+
+                 <ImageView
+                     android:layout_width="0dp"
+                     android:layout_weight="2"
+                     android:layout_height="150dp"
+                     android:src="@mipmap/ic_launcher_round" />
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="2"
+                     android:orientation="vertical">
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Articulo"
+                         android:textSize="30dp"
+                         android:fontFamily="sans-serif-black"/>
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Descripcion"
+                         android:fontFamily="sans-serif"/>
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="$9999.00"
+                         android:fontFamily="monospace"
+                         android:textColor="#1AFF00"
+                         android:textSize="25dp"/>
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="¡Envio gratis!"
+                         android:textColor="#FF1AFF00"
+                         android:fontFamily="sans-serif"
+                         android:textSize="10dp"/>
+
+                 </LinearLayout>
+
+             </LinearLayout>
+
+
+
+         </LinearLayout>-->
+
+    </ScrollView>
+
+
+</LinearLayout>

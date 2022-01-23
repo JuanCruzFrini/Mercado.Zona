@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="8dp"
+        android:background="#2AFF2E"
+        tools:context=".SearchActivity">
+
+        <ImageButton
+            android:id="@+id/perfilbtn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_person_24"
+            android:background="@drawable/buttons"
+            android:backgroundTint="@color/design_default_color_primary" />
+
+        <SearchView
+            android:queryHint="Buscar"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="5"
+            android:layout_marginHorizontal="8dp"
+            android:defaultFocusHighlightEnabled="true"
+            android:backgroundTint="#1A6200EE"
+            android:background="@drawable/buttons"/>
+
+        <ImageButton
+            android:id="@+id/carritoNav"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttons"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:src="@drawable/carrito"/>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

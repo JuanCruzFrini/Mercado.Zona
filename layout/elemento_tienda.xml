@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container_tienda"
+    android:layout_width="match_parent"
+    android:layout_height="166dp"
+    android:padding="8dp"
+    android:background="#fff"
+    android:orientation="horizontal"
+    android:onClick="tienda">
+
+    <ImageView
+        android:id="@+id/imagen_info"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="8dp"
+        android:layout_gravity="center"
+        android:paddingHorizontal="8dp"
+        android:background="@drawable/buttons"
+        android:backgroundTint="@color/design_default_color_primary"
+        android:src="@drawable/superr" />
+
+    <LinearLayout
+        android:id="@+id/container_info"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="2"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/articulo_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Articulo"
+            android:textSize="30dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/nombre_tienda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Tienda"
+            android:textSize="18dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/design_default_color_primary"
+                android:src="@drawable/mapa"/>
+
+        <TextView
+            android:id="@+id/ubicacion_tienda"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="8dp"
+            android:fontFamily="sans-serif"
+            android:text="ubicacion"
+            android:textColor="#FF1AFF00"
+            android:gravity="center"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/seguirbtn"
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:paddingHorizontal="8dp"
+            android:text="+ Seguir tienda"
+            android:textSize="16dp"
+            android:textColor="#2AFF2E"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:background="@drawable/buttons"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/siguiendobtn"
+            android:visibility="gone"
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:paddingHorizontal="8dp"
+            android:text="✓ Siguiendo"
+            android:textSize="16dp"
+            android:textColor="#2AFF2E"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:background="@drawable/buttons"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/rubro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rubro"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/urlimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="url"/>
+
+    </LinearLayout>
+
+</LinearLayout>

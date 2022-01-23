@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmarCompraActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmar compra:"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/design_default_color_primary"
+            android:fontFamily="sans-serif-black"
+            android:textSize="32dp"
+            android:padding="24dp"
+            android:background="@drawable/degradado_verde"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:text="Producto"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:text="$"
+                android:textColor="#2AFF2E"/>
+
+            <TextView
+                android:id="@+id/precioProducto_ConfirmarActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Precio"
+                android:textColor="#2AFF2E"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:text="* Envio"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/precioEnvio_ConfirmarActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:textColor="#2AFF2E"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="Gratis" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/design_default_color_primary"
+            android:layout_marginHorizontal="40dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:text="** Total"
+                android:textSize="24dp"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="$"
+                android:textColor="#2AFF2E"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/precioTotal_ConfirmarActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Precio"
+                android:textColor="#2AFF2E"
+                android:textSize="24dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0000"
+            android:layout_marginBottom="8dp"
+            android:textSize="10sp"
+            android:text="* El envio se paga al recibir la compra. \n ** Este es el total a pagar en este momento."/>
+
+        <Button
+            android:id="@+id/continuarbtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="confirmar compra"
+            android:layout_marginHorizontal="24dp"
+            android:background="@drawable/buttons"
+            android:textColor="#2AFF2E"
+            android:textSize="16dp"
+            android:fontFamily="sans-serif-black"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Detalles del producto:"
+            android:textSize="16dp"
+            android:textColor="@color/design_default_color_primary"
+            android:layout_margin="8dp"/>
+
+        <LinearLayout
+            android:id="@+id/container_articulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp"
+            android:background="#1A000000">
+
+            <ImageView
+                android:id="@+id/imagen_info"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="150dp"
+                android:src="@mipmap/ic_launcher_round" />
+
+            <LinearLayout
+                android:id="@+id/container_info"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:padding="8dp"
+                    android:id="@+id/descripcion_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Articulo"
+                    android:textSize="30dp"
+                    android:fontFamily="sans-serif-black"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripcion"
+                    android:fontFamily="sans-serif"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="16dp"
+            android:background="@color/design_default_color_primary"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detalles del envio:"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:textColor="@color/design_default_color_primary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mapa"
+                android:background="@color/design_default_color_primary"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/direccionConfirmar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Direccion: "
+                android:layout_margin="8dp"
+                android:layout_gravity="center"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/calendario"
+                android:background="@color/design_default_color_primary"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/fechaDeseada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha: "
+                android:layout_margin="8dp"
+                android:layout_gravity="center"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/reloj"
+                android:background="@color/design_default_color_primary"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/horaDeseada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hora: "
+                android:layout_margin="8dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="16dp"
+            android:background="@color/design_default_color_primary"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Metodo de pago:"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:textColor="@color/design_default_color_primary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Pagá"/>
+
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                android:text="$"
+                android:textColor="#2AFF2E"/>
+
+            <TextView
+                android:id="@+id/precioTotal_ConfirmarActivity2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="9999.00"
+                android:textColor="#2AFF2E"/>
+
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="con"/>
+
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/metodoDePagoTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="metodo seleccionado"
+                android:textColor="@color/design_default_color_primary"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="16dp"
+            android:background="@color/design_default_color_primary"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Datos para tu factura:"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:textColor="@color/design_default_color_primary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/nombre_confirmar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Nombre completo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="-  DNI: "
+                android:textColorHint="#2AFF2E" />
+
+            <TextView
+                android:id="@+id/dni_comprarActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="numero"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="end"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/cancelarbtn"
+                android:layout_marginRight="80dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:textSize="32dp"
+                android:textColor="#2AFF2E"
+                android:background="@drawable/buttons" />
+
+            <Button
+                android:id="@+id/continuarbtn"
+                android:layout_marginLeft="80dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✓"
+                android:textSize="32dp"
+                android:textColor="#2AFF2E"
+                android:background="@drawable/buttons" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

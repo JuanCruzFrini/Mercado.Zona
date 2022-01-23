@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ProductoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2AFF2E"
+            android:orientation="horizontal"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="8dp">
+
+            <ImageButton
+                android:id="@+id/perfilbtn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttons"
+                android:backgroundTint="@color/design_default_color_primary"
+                android:src="@drawable/ic_baseline_person_24" />
+
+            <SearchView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="5"
+                android:defaultFocusHighlightEnabled="true"
+                android:layout_marginHorizontal="8dp"
+                android:backgroundTint="#1A6200EE"
+                android:background="@drawable/buttons"
+                android:queryHint="Buscar" />
+
+            <ImageButton
+                android:id="@+id/carritoNav"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttons"
+                android:backgroundTint="@color/design_default_color_primary"
+                android:src="@drawable/carrito" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/sombra"/>
+
+
+        <TextView
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="8dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/descripcion_prod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textSize="24dp"
+            tools:text="Descripcion"/>
+
+        <LinearLayout
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vendedor_prod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vendedor: "
+                android:textColor="@color/design_default_color_primary"/>
+
+            <TextView
+                android:id="@+id/vendedorLink"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="No encontrado"
+                android:layout_marginEnd="24dp"
+                android:textColor="#1AFF00" />
+
+            <TextView
+                android:id="@+id/envio_prod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Envio: "
+                android:textColor="@color/design_default_color_primary"/>
+
+            <TextView
+                android:id="@+id/precioEnvio_prod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:hint="Gratis"
+                android:textColor="#1AFF00" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imagen_prod"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:background="#1A000000"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/rubro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="8dp"
+            android:text="rubro"
+            android:textColor="#1AFF00" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/urllogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="urllogo"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/urlprod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="8dp"
+            android:text="url"
+            android:textColor="#1AFF00" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:textSize="38sp"
+            android:text="$"
+            android:textColor="#1AFF00"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/precio_prod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:textSize="38sp"
+            tools:text="Precio"
+            android:textColor="#1AFF00"
+            android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/comprarbtn"
+            android:layout_marginHorizontal="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comprar"
+            android:textSize="18dp"
+            android:textColor="#1AFF00"
+            android:background="@drawable/buttons"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+
+        <Button
+            android:id="@+id/agregarCarritobtn_prodActivity"
+            android:layout_marginHorizontal="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar al Carrito"
+            android:textSize="18dp"
+            android:textColor="#1AFF00"
+            android:background="@drawable/buttons"/>
+
+    </LinearLayout>
+
+</ScrollView>

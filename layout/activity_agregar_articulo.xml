@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarArticuloActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agregar articulos:"
+                android:textSize="32dp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/design_default_color_primary"
+                android:padding="24dp"
+                android:gravity="center"
+                android:background="@drawable/degradado_verde"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre del producto: "
+                android:textColor="@color/design_default_color_primary"/>
+
+            <EditText
+                android:id="@+id/nombreProd_agregarArtActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Marca y modelo"
+                android:inputType="textCapWords"
+                />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descripcion del producto: "
+                android:textColor="@color/design_default_color_primary"/>
+
+            <EditText
+                android:id="@+id/descripcionProd_agregarArtActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Breve y concisa"
+                android:inputType="textCapWords" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precio: "
+                android:textColor="@color/design_default_color_primary" />
+
+            <EditText
+                android:id="@+id/precioProd_agregarArtActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Numero"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categoria: "
+                android:textColor="@color/design_default_color_primary"/>
+
+            <EditText
+                android:id="@+id/categoriaProd_agregarArtActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Rubro"
+                android:inputType="textCapWords"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cantidad disponible: "
+                android:textColor="@color/design_default_color_primary"/>
+
+            <EditText
+                android:id="@+id/cantidadProd_agregarArtActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Numero"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Imagenes del producto:"
+                android:textColor="@color/design_default_color_primary"/>
+
+            <EditText
+                android:id="@+id/imagenesEt_agregarArtActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Hasta 5"/>
+
+        </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="end"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/cancelarbtn"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="8dp"
+                    android:text="cancelar"
+                    android:textSize="16dp"
+                    android:textColor="#2AFF2E"
+                    android:background="@drawable/buttons"/>
+
+                <Button
+                    android:id="@+id/continuarbtn"
+                    android:layout_marginLeft="80dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="agregar"
+                    android:textSize="16dp"
+                    android:textColor="#2AFF2E"
+                    android:background="@drawable/buttons"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

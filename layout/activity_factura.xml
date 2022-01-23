@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FacturaActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="8dp"
+        android:background="#2AFF2E">
+
+        <ImageButton
+            android:id="@+id/perfilbtn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_person_24"
+            android:background="@drawable/buttons"
+            android:backgroundTint="@color/design_default_color_primary"/>
+
+        <SearchView
+            android:queryHint="Buscar"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="5"
+            android:layout_marginHorizontal="8dp"
+            android:backgroundTint="#1A6200EE"
+            android:background="@drawable/buttons"
+            android:defaultFocusHighlightEnabled="true" />
+
+        <ImageButton
+            android:id="@+id/carritoNav"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttons"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:src="@drawable/carrito"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/felicidadesText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¡Felicidades,\n compra exitosa!"
+        android:textSize="48dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/design_default_color_primary"
+        android:padding="24dp"
+        android:gravity="center"
+        android:background="@drawable/degradado_verde"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+    <TextView
+        android:id="@+id/acreditacionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:text="Se acreditó tu pago\nTu envio llegará pronto."
+        android:textSize="24dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+    <TextView
+        android:id="@+id/continuarText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:paddingHorizontal="16dp"
+        android:textColor="#2AFF2E"
+        android:text="Ahora puedes continuar viendo los mejores precios de tu ciudad, desde la comodidad de tu hogar."
+        android:textSize="24dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/continuarbtn"
+        android:layout_marginHorizontal="24dp"
+        android:paddingHorizontal="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continuar"
+        android:textSize="16dp"
+        android:textColor="#2AFF2E"
+        android:background="@drawable/buttons"/>
+
+
+
+</LinearLayout>

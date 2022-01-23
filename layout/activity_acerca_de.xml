@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/design_default_color_primary"
+    android:padding="8dp"
+    tools:context=".AcercaDe">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mercado zona es una plataforma de ventas multinivel, abierta y de libre acceso, pensada para ayudar a las pequeñas y medianas empresas de cada ciudad en llegar tanto a sus clientes habituales, como a nuevos, dentro de su zona, \ndandoles la oportunidad de mejorar sus ventas, siendo mas competitivos en el contexto de mercado local donde desarrollen su actividad comercial."
+        android:textColor="#2AFF2E"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

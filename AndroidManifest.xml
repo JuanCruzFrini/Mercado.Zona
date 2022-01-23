@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mercadozona2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_radar"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_radar"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MercadoZona2">
+        <activity android:name=".SearchActivity"></activity>
+        <activity
+            android:name=".AcercaDe"
+            android:label="¿Que es Mercado zona?"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity android:name=".ListaTiendas" />
+        <activity android:name=".CategoriasActivity" />
+        <activity android:name=".SplashScreen" />
+        <activity android:name=".RegistroCompletadoActivity" />
+        <activity android:name=".RegistroActivity" /> <!-- Recycler -->
+        <activity android:name=".Lista" />
+        <activity android:name=".AgregarArticuloActivity" />
+        <activity android:name=".PerfilEmpresaActivity" />
+        <activity android:name=".CarritoActivity" />
+        <activity android:name=".FacturaActivity" />
+        <activity android:name=".ConfirmarCompraActivity" />
+        <activity android:name=".MetodosDePagoActivity" />
+        <activity android:name=".ComprarActivity" />
+        <activity android:name=".PerfilVendedorActivity" />
+        <activity android:name=".ProductoActivity" />
+        <activity android:name=".PerfilActivity" />
+        <activity android:name=".SubirFotoFbStorage" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- WIDGET -->
+        <receiver android:name=".Widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info"/>
+        </receiver>
+    </application>
+
+</manifest>

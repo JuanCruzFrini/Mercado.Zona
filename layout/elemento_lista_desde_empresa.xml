@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container_articulo"
+    android:layout_width="match_parent"
+    android:layout_height="166dp"
+    android:background="#fff"
+    android:orientation="horizontal"
+    android:onClick="producto"
+    android:paddingVertical="8dp">
+
+    <ImageView
+        android:id="@+id/imagen_info"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_weight="2"
+        android:layout_marginHorizontal="8dp"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <LinearLayout
+        android:id="@+id/container_info"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/articulo_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Articulo"
+            android:textSize="30dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/descripcion_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Descripcion" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="$"
+                android:textColor="#1AFF00"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/precio_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="9999.00"
+                android:textColor="#1AFF00"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/envio_mainActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="$200"
+            android:textColor="#FF1AFF00"
+            android:textSize="10dp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/urlimg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Url"
+            android:textColor="#1AFF00"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stock: "/>
+
+        <TextView
+            android:id="@+id/stock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cantidad "/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
